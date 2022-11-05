@@ -12,7 +12,7 @@ export default function Login() {
   };
 
   return (
-    <div className="grid grid-cols-12 h-screen w-screen bg-violet-100">
+    <div className="grid grid-cols-12 h-screen w-screen bg-violet-50">
       <div className="col-span-7 2xl:col-span-8">
         <div className="flex justify-end items-center h-screen">
           <div className="flex h-[30rem] space-x-20">
@@ -31,7 +31,7 @@ export default function Login() {
                 <div>
                   <div className="text-black text-sm font-semibold">Email</div>
                   <input
-                    className="focus:outline-none w-64 border-b border-violet-300 bg-violet-100 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
+                    className="focus:outline-none w-64 border-b border-violet-300 bg-violet-50 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
                     type="text"
                     placeholder="Enter Your Email Here"
                   />
@@ -41,7 +41,7 @@ export default function Login() {
                     Password
                   </div>
                   <input
-                    className="focus:outline-none w-64 border-b border-violet-300 bg-violet-100 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
+                    className="focus:outline-none w-64 border-b border-violet-300 bg-violet-50 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
                     type="password"
                     placeholder="Enter Your Password Here"
                   />
