@@ -1,6 +1,14 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Login() {
+  const router = useRouter();
+
+  const HandleLogIn = () => {
+    console.log("Log in");
+    router.push("/home");
+  };
+  
   return (
     <div className="flex justify-center items-center h-screen w-screen">
       <div className="flex h-[30rem]">
@@ -13,26 +21,28 @@ export default function Login() {
             <div>
               <div className="text-black text-sm font-semibold">Email</div>
               <input
-                className="focus:outline-none border-b rounded-md p-1.5 m-2"
+                className="focus:outline-none border-b rounded-md p-1.5 m-2 text-indigo-800"
                 type="text"
-                placeholder="Enter Your Email Here"
+                // placeholder="Enter Your Email Here"
               />
             </div>
             <div>
               <div className="text-black text-sm font-semibold">Password</div>
               <input
-                className="focus:outline-none border-b rounded-md p-1.5 m-2"
+                className="focus:outline-none border-b rounded-md p-1.5 m-2 text-indigo-800"
                 type="password"
-                placeholder="Enter Your Password Here"
+                // placeholder="Enter Your Password Here"
               />
             </div>
-            <button className="text-black rounded-md p-2 m-2 bg-gradient-to-r from-pink-500 to-pink-300">
+            <button onClick={HandleLogIn} className="text-black rounded-xl p-2 m-2 bg-gradient-to-r from-pink-500 to-pink-300">
               Login
             </button>
             <button className="flex justify-end text-gray-500 rounded-md px-2">
               Forgot Password ?
             </button>
-            <button className="flex justify-center text-gray-500 rounded-md px-2">
+          </div>
+          <div className="flex justify-center">
+            <button className="flex justify-center text-purple-900 font-semibold rounded-md px-2">
               Don&apos;t have an account ?
             </button>
           </div>
