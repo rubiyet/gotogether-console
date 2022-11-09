@@ -13,15 +13,25 @@ export default function Login() {
 
   return (
     <div className="flex justify-center items-center h-screen w-screen bg-loginModalText">
-      <div className="flex h-[35rem] w-[52rem]">
-        <div className="flex justify-center items-center w-[26rem] rounded-l-xl bg-loginModal bg-[url('/bg6.png')] bg-top">
-          <Lottie
-            animationData={loaderAnimation}
-            loop={false}
-            className="w-100 h-90"
-          />
+      <div className="flex h-[35rem] w-[26rem] lg:w-[52rem]">
+        <div className="hidden lg:block">
+        <div className="flex h-[35rem] justify-center items-center w-[26rem] rounded-l-xl bg-loginModal bg-[url('/bg6.png')] bg-top">
+          <div>
+            <Lottie
+              animationData={loaderAnimation}
+              loop={false}
+              className="w-100 h-90"
+            />
+            <div className="flex flex-col justify-center items-center text-xs font-semibold pt-8">
+              <span>
+                “ The way to get started is to quit talking and begin doing.
+              </span>
+              <span>– Walt Disney ”</span>
+            </div>
+          </div>
         </div>
-        <div className="flex justify-center items-center w-[26rem] rounded-r-xl bg-white bg-[url('/bg8.jpg')] bg-no-repeat bg-top">
+        </div>
+        <div className="flex justify-center items-center w-[26rem] rounded-xl lg:rounded-r-xl bg-white bg-[url('/bg8.jpg')] bg-no-repeat bg-top">
           <div className="space-y-6 pt-10">
             <div className="flex justify-center">
               <Image src="/logo.svg" alt="" width={250} height={100} />
