@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'loginModal' : '#fafafa',
+        'loginModal' : '#bfd5cb',
+        'loginModalText' : '#eef1fe',
       },
     },
   },
