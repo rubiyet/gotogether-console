@@ -1,7 +1,8 @@
+import ShareBook from "../components/ShareBook";
 import Head from 'next/head'
 import Header from '../components/Header'
 
-export default function Home() {
+export default function ShareBookPage() {
   return (
     <div className="grid grid-cols-12">
       <Head>
@@ -10,8 +11,9 @@ export default function Home() {
         <link rel="icon" href="/11.png" />
       </Head>
       <div className="col-span-2"></div>
-      <div className="col-span-8 bg-slate-600">
+      <div className="col-span-8">
         <Header />
+        <ShareBook />
       </div>
       <div className="col-span-2"></div>
     </div>
