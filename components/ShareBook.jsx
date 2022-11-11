@@ -10,7 +10,7 @@ function classNames(...classes) {
 
 export default function ShareBook() {
   return (
-    <div className="flex justify-center items-center bg-slate-100">
+    <div className="flex justify-center items-center">
       <div className="flex h-[35rem] w-[26rem] lg:w-[52rem]">
         <div className="hidden lg:block">
           <div className="flex h-[35rem] justify-center items-center w-[26rem] rounded-l-xl bg-loginModal bg-[url('/bg10.png')] bg-no-repeat bg-left">
@@ -18,7 +18,7 @@ export default function ShareBook() {
               <div className="flex justify-end">
                 <div className="w-52 font-semibold text-lg space-y-5 italic">
                   <div>A book lying idle on a shelf is wasted ammunition</div>
-                  <div>- Herry Miller</div>
+                  <div>- Henry Miller</div>
                 </div>
               </div>
               <Image src="/book2.png" alt="" width={420} height={0} />
@@ -30,11 +30,6 @@ export default function ShareBook() {
             {/* <span className="font-semibold text-xl text-amber-900">
               Share My Book
             </span> */}
-            <input
-              className="focus:outline-none w-64 border-b border-violet-300 bg-violet-50 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
-              type="text"
-              placeholder="Book Title"
-            />
             <input
               type="text"
               className="focus:outline-none w-64 border-b border-violet-300 bg-violet-50 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
@@ -48,7 +43,7 @@ export default function ShareBook() {
             <input
               type="text"
               className="focus:outline-none w-64 border-b border-violet-300 bg-violet-50 rounded-t-lg text-sm p-1.5 m-2 text-indigo-800"
-              placeholder="Edition"
+              placeholder="Subject"
             />
             <input
               type="text"

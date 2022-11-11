@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Profile, notifications } from "../customValue/customValue";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -10,8 +11,10 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className=" bg-orange-200 h-16 flex justify-between items-center px-10">
-      <Image src="/logo.svg" alt="" width={160} height={0} />
+    <div className=" bg-white h-16 flex justify-between items-center px-10">
+      <Link href="/home">
+        <Image src="/logo.svg" alt="" width={260} height={0} />
+      </Link>
       <div className="relative">
         <input
           type="text"
@@ -50,7 +53,7 @@ export default function Header() {
           >
             <Menu.Items className="absolute right-0 z-10 mt-5 w-[18rem] origin-top-right rounded-md bg-white shadow-lg">
               <div className="">
-                <div className="bg-indigo-400 text-white font-semibold text-sm p-0.5">
+                <div className="bg-notification text-white font-semibold text-sm p-0.5">
                   Notifications
                 </div>
                 {notifications?.map((notification, index) => (

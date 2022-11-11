@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         'loginModal' : '#bfd5cb',
         'loginModalText' : '#eef1fe',
+        'header': '#6A88A0',
+        'notification': '#13C2C2',
       },
     },
   },
