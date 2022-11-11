@@ -29,11 +29,11 @@ export default function Header() {
         </button>
       </div>
       <div className="flex items-center space-x-6">
-        <form method="POST" action="/sharebook">
+        <Link href="/sharebook">
           <button className="text-white hover:text-slate-100 rounded-md px-3 h-8 bg-zinc-500">
             Share Book
           </button>
-        </form>
+        </Link>
 
         <Menu as="div" className="relative inline-block text-left">
           <div>
