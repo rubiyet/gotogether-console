@@ -11,7 +11,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className=" bg-white h-16 flex justify-between items-center px-10">
+    <div className="bg-white h-16 flex justify-between items-center px-10">
       <Link href="/home">
         <Image src="/logo.svg" alt="" width={260} height={0} />
       </Link>

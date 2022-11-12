@@ -10,7 +10,7 @@ function classNames(...classes) {
 
 export default function ShareBook() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center border border-fuchsia-600">
       <div className="flex h-[35rem] w-[26rem] lg:w-[52rem]">
         <div className="hidden lg:block">
           <div className="flex h-[35rem] justify-center items-center w-[26rem] rounded-l-xl bg-loginModal bg-[url('/bg10.png')] bg-no-repeat bg-left">

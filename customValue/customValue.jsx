@@ -49,4 +49,36 @@ const notifications = [
   },
 ]
 
-export { people, Profile, notifications };
+const Filters = [
+  {
+    title: "Author",
+    lists : [
+      "J.K. Rowling",
+      "J.R.R. Tolkien",
+      "J.D. Salinger",
+      "J.R.R. Martin",
+    ]
+  },
+  {
+    title: "Subject",
+    lists : [
+      "Fiction",
+      "Non-Fiction",
+      "Fantasy",
+      "Science Fiction",
+    ]
+  },
+  {
+    title: "Publisher",
+    lists : [
+      "Penguin",
+      "HarperCollins",
+      "Macmillan",
+      "Simon & Schuster",
+    ]
+  },
+]
+
+const array = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+export { people, Profile, notifications, Filters, array };

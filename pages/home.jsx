@@ -1,5 +1,8 @@
-import Head from 'next/head'
-import Header from '../components/Header'
+import Head from "next/head";
+import Filter from "../components/Filter";
+import Header from "../components/Header";
+import HomePageSlider from "../components/HomePageSlider";
+import RecentlyViewed from "../components/RecentlyViewed";
 
 export default function Home() {
   return (
@@ -10,8 +13,15 @@ export default function Home() {
         <link rel="icon" href="/11.png" />
       </Head>
       <div className="col-span-2"></div>
-      <div className="col-span-8 bg-slate-600">
-        <Header />
+      <div className="col-span-8 space-y-3 bg-slate-100">
+        <div>
+          <Header />
+          <Filter />
+        </div>
+        <div className="px-5 space-y-3">
+          <HomePageSlider />
+          <RecentlyViewed />
+        </div>
       </div>
       <div className="col-span-2"></div>
     </div>
