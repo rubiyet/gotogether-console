@@ -29,7 +29,7 @@ export default function Filter() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 z-10 mt-5 w-[18rem] origin-top-right rounded-md bg-white shadow-lg">
+          <Menu.Items className="absolute right-0 z-10 mt-2 w-[18rem] origin-top-right rounded-md bg-white shadow-lg">
             <div className="h-30 overflow-y-auto ">
               {filter.lists.map((list, index) => (
                 <Menu.Item key={index}>

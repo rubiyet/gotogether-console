@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <div className="bg-white h-16 flex justify-between items-center px-10">
       <Link href="/home">
-        <Image src="/logo.svg" alt="" width={260} height={0} />
+        <Image src="/logo.png" alt="" width={130} height={0} />
       </Link>
       <div className="relative">
         <input

@@ -12,6 +12,8 @@ module.exports = {
         'loginModalText' : '#eef1fe',
         'header': '#6A88A0',
         'notification': '#13C2C2',
+        'footercolor': '#2F3034',
+        'gradient': '#dbeafe',
       },
     },
   },

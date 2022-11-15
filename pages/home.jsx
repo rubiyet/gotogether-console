@@ -3,6 +3,13 @@ import Filter from "../components/Filter";
 import Header from "../components/Header";
 import HomePageSlider from "../components/HomePageSlider";
 import RecentlyViewed from "../components/RecentlyViewed";
+import Footer from "../components/Footer";
+import Quote from "../components/Quote";
+import TagCloud from "../components/TagCloud";
+import Books from "../components/Books";
+import Collectedbooks from "../components/Collectedbooks";
+import HomePageSlider2 from "../components/HomePageSlider2";
+import BookCategory from "../components/BookCategory";
 
 export default function Home() {
   return (
@@ -20,7 +27,20 @@ export default function Home() {
         </div>
         <div className="px-5 space-y-3">
           <HomePageSlider />
-          <RecentlyViewed />
+        </div>
+        <div className="space-y-3">
+          <BookCategory />
+          <div className="grid grid-cols-4 gap-2 pr-5">
+            <div className="col-span-3">
+              <RecentlyViewed />
+              <Collectedbooks />
+            </div>
+            <HomePageSlider2 />
+          </div>
+          <Books />
+          <TagCloud />
+          <Quote />
+          <Footer />
         </div>
       </div>
       <div className="col-span-2"></div>
