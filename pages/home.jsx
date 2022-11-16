@@ -31,7 +31,7 @@ export default function Home() {
         <div className="space-y-3">
           <BookCategory />
           <div className="grid grid-cols-4 gap-2 pr-5">
-            <div className="col-span-3">
+            <div className="col-span-3 space-y-3">
               <RecentlyViewed />
               <Collectedbooks />
             </div>

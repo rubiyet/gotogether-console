@@ -11,14 +11,14 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className="bg-white h-16 flex justify-between items-center px-10">
+    <div className="bg-footercolor h-16 flex justify-between items-center px-10">
       <Link href="/home">
-        <Image src="/logo.png" alt="" width={130} height={0} />
+        <Image src="/logo2.png" alt="" width={200} height={0} />
       </Link>
       <div className="relative">
         <input
           type="text"
-          className="bg-slate-200 rounded-full w-96 h-9 pl-5 pr-14 focus:outline-none"
+          className="bg-slate-200 rounded-lg w-96 h-9 pl-5 pr-14 focus:outline-none"
           placeholder="Search by author, title, or name"
         />
         <button
