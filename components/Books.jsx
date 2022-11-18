@@ -9,10 +9,10 @@ export default function Books() {
         <span>Available Books</span>
       </div>
       <div className="flex justify-center items-center">
-        <div className=" grid grid-cols-6 gap-14 h-[32rem] overflow-y-auto py-5">
+        <div className=" grid grid-cols-9 gap-14 h-[32rem] overflow-y-auto scrollbar p-5">
           {array.map((item) => (
             <a href="#" key={item}>
-              <Image src="/books/4.jpg" alt="" width={156} height={10} />
+              <Image src={"/books/" + item + ".jpg"} alt="" width={140} height={10}  className="w-[10rem] h-56"/>
               <span className="flex justify-center">{item}</span>
             </a>
           ))}

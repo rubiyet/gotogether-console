@@ -1,16 +1,25 @@
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
+import Link from "next/link";
+import { array } from "../customValue/customValue";
 
 export default function HomePageSlider() {
   return (
-    <div className="h-full">
-      <Carousel
-      leftControl
-      rightControl
-      >
-      <Image src="/books/2.jpg" alt="" width={5500} height={0} />
-      <Image src="/books/3.jpg" alt="" width={5500} height={0} />
-      <Image src="/books/4.jpg" alt="" width={5500} height={0} />
+    <div className="h-[42rem]">
+      <Carousel leftControl rightControl>
+        {array.map((item) => {
+          return (
+            <Link href="/" key={item}>
+              <Image
+                src={"/books/" + item + ".jpg"}
+                alt=""
+                width={5500}
+                height={0}
+                className="w-[30rem] h-[42rem]"
+              />
+            </Link>
+          );
+        })}
       </Carousel>
     </div>
   );

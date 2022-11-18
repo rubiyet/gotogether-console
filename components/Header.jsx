@@ -11,14 +11,14 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <div className="bg-footercolor h-16 flex justify-between items-center px-10">
+    <div className="bg-footercolor rounded-b-lg h-16 flex justify-between items-center px-10">
       <Link href="/home">
         <Image src="/logo2.png" alt="" width={200} height={0} />
       </Link>
       <div className="relative">
         <input
           type="text"
-          className="bg-slate-200 rounded-lg w-96 h-9 pl-5 pr-14 focus:outline-none"
+          className="bg-slate-200 rounded-lg w-96 h-9 pl-5 pr-14 focus:outline-none focus:ring-0 italic"
           placeholder="Search by author, title, or name"
         />
         <button
@@ -30,14 +30,14 @@ export default function Header() {
       </div>
       <div className="flex items-center space-x-6">
         <Link href="/sharebook">
-          <button className="text-white hover:text-slate-100 rounded-md px-3 h-8 bg-zinc-500">
+          <button className="text-gray-200  hover:text-slate-100 rounded-md px-3 h-9 bg-zinc-500 hover:bg-gray-500">
             Share Book
           </button>
         </Link>
 
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="flex justify-center  border-gray-300 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-0">
+            <Menu.Button className="flex justify-center  border-gray-300 text-sm font-medium text-gray-700 shadow-sm focus:outline-none focus:ring-0">
               <Image src="/notification.svg" alt="" width={20} height={0} />
             </Menu.Button>
           </div>
@@ -51,7 +51,7 @@ export default function Header() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute right-0 z-10 mt-5 w-[18rem] origin-top-right rounded-md bg-white shadow-lg">
+            <Menu.Items className="absolute right-0 z-10 mt-5 w-[18rem] origin-top-right bg-white shadow-lg">
               <div className="">
                 <div className="bg-notification text-white font-semibold text-sm p-0.5">
                   Notifications
@@ -96,7 +96,7 @@ export default function Header() {
 
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center rounded-full border border-gray-300 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-0">
+            <Menu.Button className="inline-flex w-full justify-center rounded-full border border-footercolor hover:border hover:border-gray-50 text-sm font-medium text-gray-700 shadow-sm focus:outline-none focus:ring-0">
               <Image src="/userPlaceHolder.svg" alt="" width={40} height={0} />
             </Menu.Button>
           </div>

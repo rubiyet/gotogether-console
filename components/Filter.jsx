@@ -10,11 +10,11 @@ function classNames(...classes) {
 
 export default function Filter() {
   return (
-    <div className="bg-white flex justify-center items-center space-x-16 border-t border-gray-200 py-1">
+    <div className="bg-footercolor flex justify-center items-center rounded-lg space-x-16 border-t border-gray-200 py-1">
       {Filters?.map((filter, index) => (
       <Menu key={index} as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="flex justify-center bg-white px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-0">
+          <Menu.Button className="flex justify-center bg-footercolor px-4 py-2 text-sm font-medium text-white hover:text-gray-900 focus:outline-none focus:ring-0">
             {filter.title}
             <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
           </Menu.Button>

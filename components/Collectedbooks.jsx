@@ -12,12 +12,18 @@ export default function Collectedbooks() {
         </div>
         <button className="text-sm">See All</button>
       </div>
-      <div className="h-44 overflow-y-auto p-5">
-        <div className="grid grid-cols-7 gap-5">
-          {array.map((item) => {
+      <div className="h-44 overflow-y-auto scrollbar p-5">
+        <div className="grid grid-cols-10 gap-5">
+          {array.reverse().map((item) => {
             return (
               <Link href="/" key={item}>
-                <Image src="/books/2.jpg" alt="" width={100} height={0} />
+                <Image
+                  src={"/books/" + item + ".jpg"}
+                  alt=""
+                  width={150}
+                  height={0}
+                  className="w-24 h-36"
+                />
               </Link>
             );
           })}

@@ -9,12 +9,18 @@ export default function RecentlyViewed() {
         <Image src="/viewed.svg" alt="" width={15} height={10} />
         <span>Recently Viewed</span>
       </div>
-      <div className="h-44 overflow-y-auto p-5">
-        <div className="grid grid-cols-7 gap-5">
+      <div className="h-44 overflow-y-auto scrollbar p-5">
+        <div className="grid grid-cols-10 gap-5">
           {array.map((item) => {
             return (
               <Link href="/" key={item}>
-                <Image src="/books/3.jpg" alt="" width={100} height={0} />
+                <Image
+                  src={"/books/" + item + ".jpg"}
+                  alt=""
+                  width={150}
+                  height={0}
+                  className="w-24 h-36"
+                />
               </Link>
             );
           })}
